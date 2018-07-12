@@ -17,7 +17,7 @@ def model_fn(features, labels, mode):
         x = mnist.hidden_layer(features, trainable=(not FLAGS.freeze))
 
     with tf.variable_scope("mnist_ext"):
-        outputs = tf.layers.dense(x, FLAGS.hidden_size)
+        outputs = tf.layers.dense(x, FLAGS.hidden_size2)
         logits = tf.layers.dense(outputs, 10)
 
     loss = tf.losses.sparse_softmax_cross_entropy(labels=labels, logits=logits)
