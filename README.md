@@ -13,7 +13,7 @@ You can see the official document of ```WarmStartSettings``` class at <https://w
 
 ## 1. Pretrain the base model
 
-This is a simple mnist model, but you should carefully design the layer name to be easily imported by the new model.  In this example, "mnist/hidden/kernel" and "mnist/hidden/bias" will be used by the new model.  As you can see, checkpoint files will be saved in the ```./model/``` directory.
+This is a simple mnist model, but you should carefully design the layer name to be easily imported by the new model.  In this example, ```mnist/hidden/kernel``` and ```mnist/hidden/bias``` will be used by the new model.  As you can see, checkpoint files will be saved in the ```./model/``` directory.
 
 ```
 $ python mnist.py
